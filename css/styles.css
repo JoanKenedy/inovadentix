@@ -427,7 +427,7 @@ form button {
   margin: auto;
   display: block;
   padding: 12px 15px;
-  background-color: #01df01;
+  background-color: #0092a1;
   color: #fff;
   font-size: 1.3em;
   border: none;
@@ -458,6 +458,10 @@ form button {
   font-size: 1em;
   color: #6e6e6e;
 }
+.p-footer {
+  display: flex;
+  gap: 8px;
+}
 .footer-footer {
   background-color: #0092a1;
   width: 100%;
@@ -471,6 +475,7 @@ form button {
   text-decoration: none;
   color: #fff;
 }
+
 .contact-wats {
   width: 100%;
   position: relative;
@@ -564,16 +569,15 @@ form button {
   gap: 20px;
 }
 .container-opiniones .item-opiniones a {
-  background-color: #0040ff;
+  background-color: #0092a1;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 7px;
+  padding: 15px;
   text-decoration: none;
 }
 .item-opiniones {
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -587,9 +591,9 @@ form button {
   color: gold;
 }
 .item-opiniones p {
-  font-size: 1em;
+  font-size: 0.9em;
   color: #fff;
-  text-align: center;
+  text-align: justify;
 }
 .promotions {
   width: 100%;
@@ -599,13 +603,21 @@ form button {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 5px auto;
 }
-.container-promotions {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
+.container-video .item-video {
+  position: relative;
+  padding: 5px 20px;
   margin: auto;
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-video video {
+  box-shadow: 7px 12px 12px rgba(0, 0, 0, 0.5);
+}
+.video-js .vjs-big-play-button {
+  font-size: 4em !important;
 }
 .clinicos {
   width: 100%;
@@ -648,6 +660,11 @@ form button {
   color: #0092a1;
   font-size: 1.3em;
 }
+.sub-item-casos h4 {
+  text-align: center;
+  color: #303440;
+  font-size: 1.5em;
+}
 .sub-item-casos p {
   text-align: justify;
 }
@@ -665,25 +682,28 @@ form button {
   padding: 7px;
   font-size: 1.3em;
 }
+.promotions h3 {
+  text-align: center !important;
+  font-size: 1.6em;
+}
 
 @media (min-width: 768px) {
+  .p-footer {
+    display: flex;
+    gap: 12px;
+  }
+  .video-js .vjs-big-play-button {
+    font-size: 6em !important;
+  }
   .promotions h2 {
     text-align: center;
     font-size: 3.2em;
     text-transform: uppercase;
     font-weight: 400;
   }
-  .container-promotions {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin: auto;
-    width: 80%;
-  }
-  .item-promotion img {
-    max-width: 100%;
-    border-radius: 50px 0px;
-    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  .container-video .item-video {
+    position: relative;
+    padding: 15px 30px;
   }
   .img-scr {
     display: block !important;
@@ -805,7 +825,7 @@ form button {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .item-especialistas h6 {
@@ -1059,7 +1079,7 @@ form button {
     transition: 0.5s;
   }
   .opiniones h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     margin: 12px auto 0px auto;
   }
@@ -1068,16 +1088,15 @@ form button {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
     padding-bottom: 15px;
   }
   .container-opiniones .item-opiniones a {
-    background-color: #0040ff;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
   }
   .item-opiniones h3 {
@@ -1162,5 +1181,10 @@ form button {
     width: 100%;
     height: 450px;
     object-fit: cover;
+  }
+  .promotions h3 {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 5px auto;
   }
 }
