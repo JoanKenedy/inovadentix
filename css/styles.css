@@ -240,16 +240,15 @@ header {
 }
 .contain-redes {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .contain-redes a img {
-  max-width: 65%;
+  max-width: 20%;
 }
 .contain-redes p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #0b243b;
   font-weight: 600;
 }
@@ -833,15 +832,9 @@ form button {
     font-weight: 600;
     text-align: left;
   }
-  .contain-redes {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-  }
+
   .contain-redes a img {
-    max-width: 65%;
+    max-width: 12%;
   }
   .contain-redes p {
     font-size: 1.4em;
