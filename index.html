@@ -29,7 +29,6 @@
         <a href="https://api.whatsapp.com/send?phone=525534126902"
         ><i class="fa-brands fa-whatsapp"></i>5534126902</a
       >
-   
         
       </div>
       <div class="header-bottom">
@@ -48,22 +47,22 @@
     </header>
     <main>
         <div class="container-slider" id="inicio">
-           <!-- Swiper -->
+          <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/inova-1.png" class="img-scr"/>
-            <img src="images/inova-movil-1.png" alt="" class="img-movil">
-            <div class="container-text"  >
+            <img src="images/promociones/muelas-promo-inovadentix.png" class="img-scr"/>
+            <img src="images/promociones/muelas-vertical-inovadentix.jpg" alt="" class="img-movil">
+            <!--<div class="container-text"  >
               <p class="text-1">¡Queremos verte sonreír!</p>
-            </div>
+            </div>-->
           </div>
           <div class="swiper-slide">
-            <img src="images/inova-2.png" class="img-scr"/>
-            <img src="images/inova-movil-2.png" alt="" class="img-movil">
-            <div class="container-text"  >
+            <img src="images/promociones/limpieza-promo-inovadentix.png" class="img-scr"/>
+            <img src="images/promociones/limpieza-vertical-inovadentix.jpg" alt="" class="img-movil">
+            <!--<div class="container-text"  >
               <p class="text-2">¡Pacientes sanos, Pacientes felices, Pacientes sonrientes!</p>
-            </div>
+            </div>-->
           </div>
           
         
@@ -73,12 +72,22 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-  
+      
+      <!--Modal promociones-->
+      <div class="modal-promo" id="modal-promo">
+        <div class="modal-texto">
+          <p>Promociones validas sólo en sucursal Condesa</p>
+          <p>Julio</p>
+        </div>
+        <img src="images/boton-cerrar.png" alt="botón cerrar" id="close-promo" class="cerrar-promo">
+        <img src="images/promociones/limpieza-cuadrado-inovadentix.jpg" alt="promoción limpieza" class="promo">
+        <img src="images/promociones/muelas-cuadrado-inovadentix.jpg" alt="promoción muelas" class="promo">
+      </div>
       <!-- Swiper JS -->
         </div>
         <div class="we-offer" id="somos">
             <h2>¿Quiénes Somos?</h2>
-           
+          
             <div class="container-offer">
                 <div class="item-offer"  data-aos="fade-down" data-aos-duration="1000">
                     <img src="images/logo-1.png" alt="" class="img-logo-somos">
@@ -391,7 +400,7 @@
                 54987 Santiago Teyahualco, Méx.
                 México</p>
             </div>
-           
+          
           </div>
           <div class="item-icon">
             <i class="fa-solid fa-envelope"></i>
@@ -450,5 +459,6 @@
           flue: true
       })
     </script>
+    <script src="js/modal-promociones.js"></script>
   </body>
 </html>
