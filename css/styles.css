@@ -197,7 +197,7 @@ header {
   transition: 1s;
 }
 .modal-promo .promo {
-  max-width: 100%;
+  max-width: 30%;
   max-height: 50%;
   margin: 20px;
 }
@@ -734,18 +734,19 @@ form button {
   .modal-promo .modal-texto {
     text-align: center;
     top: 10%;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: bold;
     position: initial;
     margin-top: 15%;
+    padding: 10px;
   }
   .modal-promo .cerrar-promo {
     width: 25px;
     top: 10px;
   }
   .modal-promo .promo {
-    max-width: 60%;
-    max-height: 50%;
+    max-width: 40%;
+    max-height: 30%;
     margin: 10px 10px 10px 10px;
   }
   .abrir {
