@@ -18,19 +18,42 @@
   />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
-<script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '622489409986110');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=622489409986110&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLZFEP17KE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WLZFEP17KE');
+    </script>
   </head>
   <body>
     <header>
       <div class="header-top">
         <a href="tel:5575767414"
-          ><i class="fa-solid fa-phone"></i>5575767414</a
-        >
-        <a href="https://api.whatsapp.com/send?phone=525534126902"
-        ><i class="fa-brands fa-whatsapp"></i>5534126902</a
-      >
-        
+          ><i class="fa-solid fa-phone"></i>Condesa: 5575767414</a>
+        <a href="tel:5534126902"
+        ><i class="fa-solid fa-phone"></i>Tultepec: 5534126902</a>
       </div>
       <div class="header-bottom">
         <img src="images/logo-1.png" alt="" class="logo-header" />
@@ -52,8 +75,8 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/promociones/muelas-promo-inovadentix.png" class="img-scr"/>
-            <img src="images/promociones/muelas-vertical-inovadentix.jpg" alt="" class="img-movil">
+            <img src="images/promociones/colocacion-implante-promo-inovadentix.jpg" class="img-scr"/>
+            <img src="images/promociones/colocacion-implant-vertical-inovadentix.jpg" alt="" class="img-movil">
             <!--<div class="container-text"  >
               <p class="text-1">¡Queremos verte sonreír!</p>
             </div>-->
@@ -65,10 +88,15 @@
               <p class="text-2">¡Pacientes sanos, Pacientes felices, Pacientes sonrientes!</p>
             </div>-->
           </div>
-          
-        
+          <div class="swiper-slide">
+            <img src="images/promociones/bichectomia-promo-inovadentix.jpg" class="img-scr"/>
+            <img src="images/promociones/bichectomia-vertical-inovadentix.jpg" alt="" class="img-movil">
+            <!--<div class="container-text"  >
+              <p class="text-2">¡Pacientes sanos, Pacientes felices, Pacientes sonrientes!</p>
+            </div>-->
           </div>
         </div>
+      </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
@@ -78,12 +106,11 @@
       <div class="modal-promo" id="modal-promo">
         <div class="modal-texto">
           <p>Promociones validas sólo en sucursal Condesa</p>
-          <p>Julio</p>
         </div>
         <img src="images/boton-cerrar.png" alt="botón cerrar" id="close-promo" class="cerrar-promo">
-        <img src="images/promociones/muelas-cuadrado-inovadentix.jpg" alt="promoción muelas" class="promo">
         <img src="images/promociones/promo-1.jpeg" alt="promoción muelas" class="promo">
         <img src="images/promociones/promo-2.jpeg" alt="promoción muelas" class="promo">
+        <img src="images/promociones/bichectomia-cuadrado-inovadentix.jpg" alt="promoción muelas" class="promo">
       </div>
       <!-- Swiper JS -->
         </div>
@@ -105,7 +132,7 @@
           <h3>¡Mira nuestro video!</h3>
           <div class="container-video">
             <div class="item-video">
-              <video class="video-js vjs-16-9 vjs-big-play-centered" id="videoId" controls>
+              <video class="video-js vjs-16-9 vjs-big-play-centered" id="videoId" poster="images/banner-video.png" controls>
                 <source src="media/Video_Inovadentix.mp4" type="video/mp4">
               </video>
             </div>
@@ -312,13 +339,18 @@
           </div>
           <div class="contacto-show" id="contacto-show">
             <figure>
-              <a href="https://api.whatsapp.com/send?phone=525534126902" target="_blank"><img src="images/whatsapp.png" alt=""></a> 
-             </figure>
-             <figure>
-               <a href="tel:5575767414" target="_blank"><img src="images/phone.png" alt=""></a> 
-              </figure>
+              <div class="contact-text-2" style="bottom: 97px;" id="contacto-text">
+                <p>Tultepec</p>
+              </div>
+                <a href="https://api.whatsapp.com/send?phone=525534126902" target="_blank"><img src="images/whatsapp.png" alt=""></a> 
+            </figure>
+            <figure>
+              <div class="contact-text-2" style="bottom: 27px;" id="contacto-text">
+                <p>Condesa</p>
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=525518378557" target="_blank"><img src="images/whatsapp.png" alt=""></a> 
+            </figure>
           </div>
-          
         </div>
         <div class="opiniones">
           <h2>Clientes satisfechos</h2>
@@ -375,53 +407,82 @@
         </div>
     </main>
     <footer id="contact">
-      <h2>Contacto</h2>
-      <div class="footer-map">
-        <div class="container-map" >
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.4025996975806!2d-99.12082012566718!3d19.652822033612875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f46953cd9c0f%3A0xa7125db03a793722!2sCto.%20Hacienda%20Real%20de%20Tultepec%201%2C%20Hacienda%20Real%20de%20Tultepec%2C%2054987%20Santiago%20Teyahualco%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1687554365915!5m2!1ses-419!2smx" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div class="container-footer">
-        <div class="item-footer"  >
-          <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <input type="tel" placeholder="Teléfono">
-            <input type="text" placeholder="Asunto">
-            <textarea name="" id="" cols="30" rows="10" placeholder="  Mensaje"></textarea>
-            <button type="submit">Enviar mensaje</button>
-          </form>
-        </div>
-        <div class="item-footer" >
-          <div class="item-icon">
+      <h2 style="color: #0092a1; font-size: 2.5em; text-transform: uppercase; font-weight: 400;">Contacto</h2>
+      <div class="grid-contacto">
+        <div class="grid-item">
+          <h2>Tultepec</h2>
+          <div class="info-footer">
             <i class="fa-sharp fa-solid fa-location-dot"></i>
-            <div class="info-footer">
+            <div>
               <h5>Dirección</h5>
               <p>Circuito Hacienda Real de Tultepec 1
                 Hacienda Real de Tultepec
-                54987 Santiago Teyahualco, Méx.
-                México</p>
+                54987 Santiago Teyahualco</p>
             </div>
-          
+            <div class="telefono">
+              <a href="tel:5534126902" style="color: black; text-decoration: none; padding-right: 20px;">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h5>Teléfono</h5>
+                  <p>5534126902</p>
+                </div>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=525534126902" style="color: black; text-decoration: none;">
+                <i class="bi bi-whatsapp"></i>
+                <div>
+                  <h5>WhatsApp</h5>
+                  <p>5534126902</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="item-icon">
-            <i class="fa-solid fa-envelope"></i>
-            <div class="info-footer">
-              <h5>Correo electrónico</h5>
-              <p>especialidadesodontologicas04@gmail.com</p>
+          <div class="footer-map">
+            <div class="container-map" >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.4025996975806!2d-99.12082012566718!3d19.652822033612875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f46953cd9c0f%3A0xa7125db03a793722!2sCto.%20Hacienda%20Real%20de%20Tultepec%201%2C%20Hacienda%20Real%20de%20Tultepec%2C%2054987%20Santiago%20Teyahualco%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1687554365915!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          
-          </div>
-          <div class="item-icon">
-            <i class="fa-solid fa-phone"></i>
-            <div class="info-footer">
-              <h5>Teléfonos</h5>
-            <p class="p-footer"><span>Whatsapp: 5534126902  </span> <span>Teléfono: 5575767414</span> </p>
-         
-            </div>
-            
           </div>
         </div>
+        <div class="grid-item">
+          <h2>Condesa</h2>
+          <div class="info-footer">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <div>
+              <h5>Dirección</h5>
+              <p>Av. Benjamín Franklin 233-Piso 2, Hipódromo, Cuauhtémoc, 06100, CDMX</p>
+            </div>
+            <div class="telefono">
+              <a href="tel:5518378557" style="color: black; text-decoration: none; padding-right: 20px;">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h5>Teléfono</h5>
+                  <p>5518378557</p>
+                </div>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=525518378557" style="color: black; text-decoration: none;">
+                <i class="bi bi-whatsapp"></i>
+                <div>
+                  <h5>WhatsApp</h5>
+                  <p>5518378557</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-map">
+            <div class="container-map" >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.192360703569!2d-99.17466618994962!3d19.404092941516474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffde09efeb7b%3A0x4539b41bb65a8215!2sInovadentix%20Condesa!5e0!3m2!1ses-419!2smx!4v1690825753702!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item-footer form-contacto"  >
+        <form action="">
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Teléfono">
+          <input type="text" placeholder="Asunto">
+          <textarea name="" id="" cols="30" rows="10" placeholder="  Mensaje"></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
       </div>
       <div class="footer-footer">
     <p> © Inovadentix.Todos los derechos reservados. </p>  

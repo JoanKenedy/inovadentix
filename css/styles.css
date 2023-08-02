@@ -402,12 +402,13 @@ header {
 footer {
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 footer h2 {
   text-align: center;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  font-weight: 400;
 }
 .footer-map {
   width: 100%;
@@ -418,6 +419,9 @@ footer h2 {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.item-icon i {
+  display: none;
 }
 .container-map iframe {
   position: absolute;
@@ -435,19 +439,46 @@ footer h2 {
   margin: auto;
   text-align: center;
 }
-.item-footer:nth-child(1) form {
-  width: 100%;
-  margin: auto;
+.grid-contacto {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.telefono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+}
+.item-footer form {
+  margin: 0 10px 0 10px;
   text-align: center;
 }
-.item-footer:nth-child(1) form input {
+.form-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-footer form input {
   width: 100%;
   padding: 13px;
   margin: 7px auto;
   border: 1.8px solid #a4a4a4;
   border-radius: 5px;
 }
-.item-footer:nth-child(1) form textarea {
+.item-footer form textarea {
   width: 100%;
   margin: 7px auto;
   border: 1.8px solid #a4a4a4;
@@ -505,6 +536,7 @@ form button {
 .footer-footer {
   background-color: #0092a1;
   width: 100%;
+  margin-top: 20px;
 }
 .footer-footer p {
   color: #fff;
@@ -514,6 +546,9 @@ form button {
 .footer-footer p a {
   text-decoration: none;
   color: #fff;
+}
+.info-footer {
+  text-align: center;
 }
 
 .contact-wats {
@@ -557,6 +592,20 @@ form button {
   animation: crecer 3s 3;
   z-index: 5;
 }
+.contact-text-2 {
+  width: 150px;
+  height: auto;
+  background-color: #1eb8da;
+  position: fixed;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border-radius: 20px;
+  animation: crecer 3s 3;
+  z-index: -1;
+}
 @keyframes crecer {
   from {
     transform: scale(0);
@@ -567,7 +616,7 @@ form button {
   }
 }
 
-.contact-text p {
+.contact-text p, .contact-text-2 p {
   font-size: 1.1em;
   color: #fff;
   text-transform: uppercase;
@@ -1087,6 +1136,9 @@ form button {
       transition: scale(1);
     }
   }
+  .grid-contacto {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .contact-wats .contact-text {
     width: 250px;
     height: auto;
@@ -1228,6 +1280,10 @@ form button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .sub-item-casos h1 {
+    color: #424242;
+    font-size: 35px;
   }
   .sub-item-casos h3 {
     text-align: left;
