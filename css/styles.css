@@ -775,7 +775,20 @@ form button {
   text-align: center !important;
   font-size: 1.6em;
 }
-
+.wats-1 {
+  bottom: 27px;
+}
+.wats-2 {
+  bottom: 97px;
+}
+@media (min-width: 768px) {
+  .wats-1 {
+    bottom: 33px;
+  }
+  .wats-2 {
+    bottom: 115px;
+  }
+}
 @media (max-width: 766px) {
   .modal-promo{
     flex-direction: column;
